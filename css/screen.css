@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Open+Sans:400);
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -79,87 +79,117 @@ html {
   box-sizing: inherit;
 }
 
-/* line 26, ../_sass/screen.scss */
+/* line 37, ../_sass/screen.scss */
 body {
   line-height: 1.5;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, "Helvetica Neue", sans-serif;
+  color: #323232;
+  font-family: 'PT Serif', Georgia, serif;
 }
 
-/* line 32, ../_sass/screen.scss */
+/* line 44, ../_sass/screen.scss */
 p, ul, ol {
   margin-bottom: 1.5em;
 }
 
-/* line 36, ../_sass/screen.scss */
+/* line 48, ../_sass/screen.scss */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+/* line 52, ../_sass/screen.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 39, ../_sass/screen.scss */
+/* line 55, ../_sass/screen.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 43, ../_sass/screen.scss */
+/* line 59, ../_sass/screen.scss */
 h1, h2, h3, h4 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  font-family: 'Open Sans', Helvetica, Arial, "Helvetica Neue", sans-serif;
 }
 
-/* line 48, ../_sass/screen.scss */
+/* line 65, ../_sass/screen.scss */
 strong, b {
   font-weight: bold;
 }
 
-/* line 52, ../_sass/screen.scss */
+/* line 69, ../_sass/screen.scss */
 em, i {
   font-style: italic;
 }
 
-/* line 56, ../_sass/screen.scss */
+/* line 73, ../_sass/screen.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 60, ../_sass/screen.scss */
+/* line 77, ../_sass/screen.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 64, ../_sass/screen.scss */
+/* line 81, ../_sass/screen.scss */
 h3 {
   font-size: 1.25em;
 }
 
-/* line 68, ../_sass/screen.scss */
+/* line 85, ../_sass/screen.scss */
 h4 {
   font-weight: bold;
 }
 
-/* line 72, ../_sass/screen.scss */
+/* line 89, ../_sass/screen.scss */
 small {
   font-size: .75em;
 }
 
-/* line 76, ../_sass/screen.scss */
+/* line 93, ../_sass/screen.scss */
+.intro {
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #376184;
+}
+
+/* line 99, ../_sass/screen.scss */
 .footnote {
-  color: grey;
+  color: #4e4d4d;
   line-height: 1.25;
 }
 
-/* line 82, ../_sass/screen.scss */
+/* line 104, ../_sass/screen.scss */
+.list-inline {
+  margin-left: 0;
+}
+/* line 106, ../_sass/screen.scss */
+.list-inline li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 110, ../_sass/screen.scss */
+.list-inline a {
+  margin: 0 1em 0 0;
+  padding: 1em 0;
+  border-bottom: 0;
+}
+
+/* line 118, ../_sass/screen.scss */
 a {
   color: #376184;
   text-decoration: none;
   border-bottom: 2px solid #376184;
 }
-/* line 86, ../_sass/screen.scss */
+/* line 122, ../_sass/screen.scss */
 a:hover, a:focus {
   opacity: .85;
 }
 
-/* line 95, ../_sass/screen.scss */
+/* line 131, ../_sass/screen.scss */
 .wrap {
   width: 100%;
   max-width: 36em;
@@ -168,14 +198,25 @@ a:hover, a:focus {
   padding-right: 1em;
 }
 
+/* line 139, ../_sass/screen.scss */
+.section-bg {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 144, ../_sass/screen.scss */
+.section-bg-grey {
+  background: #fcfcfc;
+}
+
 @media only screen and (min-width: 640px) {
-  /* line 106, ../_sass/screen.scss */
+  /* line 150, ../_sass/screen.scss */
   body {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 112, ../_sass/screen.scss */
+  /* line 156, ../_sass/screen.scss */
   body {
     font-size: 18px;
   }

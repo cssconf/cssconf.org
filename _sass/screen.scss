@@ -5,7 +5,7 @@
 
 @import "compass/reset";
 
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Open+Sans:400);
 
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -21,16 +21,32 @@ html {
 $bottom-margin: 1.5em;
 $color_blue: #376184;
 $color_green: #87c9b5;
+$color_darkgray: #323232;
+$color_gray: #4e4d4d;
+$color_mediumgray: #494a4a;
 
+
+@mixin serif {
+  font-family: 'PT Serif', Georgia, serif;
+}
+
+@mixin sans {
+  font-family: 'Open Sans', Helvetica, Arial, "Helvetica Neue", sans-serif;
+}
 
 body {
   line-height: 1.5;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, "Helvetica Neue", sans-serif;
+  color: $color_darkgray;
+  @include serif;
 }
 
 p, ul, ol {
   margin-bottom: $bottom-margin;
+}
+
+ul, ol {
+  margin-left: 1.5em;
 }
 
 ul {
@@ -43,6 +59,7 @@ ol {
 h1, h2, h3, h4 {
   margin-top: $bottom-margin;
   margin-bottom: $bottom-margin;
+  @include sans;
 }
 
 strong, b {
@@ -73,9 +90,28 @@ small {
   font-size: .75em;
 }
 
+.intro {
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid $color_blue;
+}
+
 .footnote {
-  color: grey;
+  color: $color_gray;
   line-height: 1.25;
+}
+
+.list-inline {
+  margin-left: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+  a {
+    margin: 0 1em 0 0;
+    padding: 1em 0;
+    border-bottom: 0;
+  }
 }
 
 //links
@@ -100,6 +136,14 @@ a {
   padding-right: 1em;
 }
 
+.section-bg {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.section-bg-grey {
+  background: #fcfcfc;
+}
 
 
 @media only screen and (min-width: 640px) {
