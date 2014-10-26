@@ -2,8 +2,8 @@
 title: CSSconf.org
 email: contact@cssconf.eu
 description: "CSSconf is a conference dedicated to the designers, developers and engineers who build the world’s most engaging user interfaces. From the community, for the community."
-baseurl: "cssconf.org/"
-url: "http://cssconf.org"
+baseurl: "/cssconf.org"
+url: "http://cssconf.github.io/"
 twitter_username: cssconf
 github_username:  cssconf
 
