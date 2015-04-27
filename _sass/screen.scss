@@ -19,11 +19,14 @@ html {
 // vars
 
 $bottom-margin: 1.5em;
-$color_blue: #376184;
-$color_green: #87c9b5;
-$color_darkgray: #323232;
-$color_gray: #4e4d4d;
-$color_mediumgray: #494a4a;
+$color-blue: #2176ff;
+$color-red: #ea3939;
+$color-black: #212121;
+$color-grey: #a4a4a4;
+$color-yellow: #fcc720;
+$color-white: #fff;
+$color-beige: #f5f2e6;
+
 
 
 @mixin serif {
@@ -37,7 +40,7 @@ $color_mediumgray: #494a4a;
 body {
   line-height: 1.5;
   font-size: 14px;
-  color: $color_darkgray;
+  color: $color-black;
   @include serif;
 }
 
@@ -71,7 +74,8 @@ em, i {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 h2 {
@@ -93,11 +97,11 @@ small {
 .intro {
   font-size: 1.25em;
   padding-bottom: 1em;
-  border-bottom: 2px solid $color_blue;
+  border-bottom: 2px solid $color-blue;
 }
 
 .footnote {
-  color: $color_gray;
+  color: $color-grey;
   line-height: 1.25;
 }
 
@@ -117,21 +121,20 @@ small {
 
 //links
 a {
-  color: $color_blue;
+  color: $color-blue;
   text-decoration: none;
-  border-bottom: 2px solid $color_blue;
+  border-bottom: 2px solid $color-blue;
   &:hover,
   &:focus {
-    opacity: .85;
+    color: $color-red;
   }
 }
-
 
 
 // layout
 .wrap {
   width: 100%;
-  max-width: 36em;
+  max-width: 48em;
   margin: 2em auto;
   padding-left: 1em;
   padding-right: 1em;
@@ -147,9 +150,31 @@ a {
 }
 
 
+// icon 
+.css-family-logo {
+  display: block;
+  max-width: 16em;
+  margin: 1.5em auto;
+}
+
+.circle-yellow { fill: $color-yellow; }
+
+.circle-red { fill: $color-red; }
+
+.circle-blue { fill: $color-blue; }
+
+[class^="type__letter"] { fill: $color-red; }
+
+[class^="globe__"] { fill: $color-black; }
+
 @media only screen and (min-width: 640px) {
   body {
     font-size: 16px;
+  }
+  .css-family-logo {
+    max-width: 16em;
+    float: right;
+    margin: 3em 0 2em 2em;
   }
 }
 
