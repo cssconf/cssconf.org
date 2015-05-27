@@ -1,5 +1,16 @@
 cssconf.org
 ===========
 
-Run:
-jekyll serve -w
+Develop locally
+---
+
+Install:
+
+```
+gem install bundler
+bundle install
+```
+
+Serve:
+
+`bundle exec jekyll serve -w`
