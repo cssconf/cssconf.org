@@ -1,16 +1,20 @@
-cssconf.org
-===========
+# cssconf.org
 
-Develop locally
----
+## Dependencies
 
-Install:
+* Ruby (2.4.2+)
+* bundler gem (`gem install bundler`)
+
+## Develop locally
+
+Install the dependencies:
 
 ```
-gem install bundler
 bundle install
 ```
 
 Serve:
 
-`bundle exec jekyll serve -w`
+```
+bundle exec jekyll serve
+```

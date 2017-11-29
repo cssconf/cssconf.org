@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'compass'
 gem 'jekyll'
+gem 'yajl-ruby', '~> 1.3.1'
