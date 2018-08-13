@@ -119,6 +119,26 @@ small {
   }
 }
 
+.list-confs {
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18ch, 1fr) );
+  grid-gap: 1rem;
+  a {
+    display: block;
+    margin: 0;
+    padding: 2em 1em;
+    border-bottom: 0;
+    background-color: $color-blue;
+    color: $color-white;
+    &:hover, &:focus {
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+}
+
 //links
 a {
   color: $color-blue;
@@ -150,7 +170,7 @@ a {
 }
 
 
-// icon 
+// icon
 .css-family-logo {
   display: block;
   max-width: 16em;
